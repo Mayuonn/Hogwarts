@@ -1,0 +1,40 @@
+﻿<Window x:Class="Hogwarts.doli"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hogwarts"
+        mc:Ignorable="d"
+        Title="Определяем долю юношей и девушек среди студентов" Height="610" Width="600">
+    <Grid Background="Black">
+        <TextBlock x:Name="man" HorizontalAlignment="Left" Margin="52,87,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Background="Black" Foreground="White"/>
+        <TextBlock x:Name="woman" HorizontalAlignment="Left" Margin="478,87,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Background="Black" Foreground="White"/>
+        <TextBlock x:Name="student_count" HorizontalAlignment="Center" Margin="0,153,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Background="Black" Foreground="White" Width="53">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+        </TextBlock>
+        <Image HorizontalAlignment="Left" Height="165" Margin="31,132,0,0" VerticalAlignment="Top" Width="125" Source="/596631c0b999015d373258f8.png"/>
+        <Image HorizontalAlignment="Center" Height="182" VerticalAlignment="Center" Width="146" Source="/b5e9292a12786b3250ff684293125236.png"/>
+        <Image HorizontalAlignment="Left" Height="191" Margin="449,142,0,0" VerticalAlignment="Top" Width="111" Source="/images-_1_.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="52,71,0,0" TextWrapping="Wrap" Text="Юноши:" VerticalAlignment="Top" Background="Black" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,132,0,0" TextWrapping="Wrap" Text="Всего студентов:" VerticalAlignment="Top" Background="Black" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="478,71,0,0" TextWrapping="Wrap" Text="Девушки:" VerticalAlignment="Top" Background="Black" Foreground="White">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+        </TextBlock>
+        <Button Content="Записать в файл?" HorizontalAlignment="Left" Margin="463,512,0,0" VerticalAlignment="Top" Height="35" Width="110" BorderBrush="White" Background="Black" Foreground="White"/>
+
+    </Grid>
+</Window>
